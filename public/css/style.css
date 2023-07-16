@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #f2fe96 0%, #fcfaf8 100%);
+  color: #060619;
+  font-family: "Acme", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #ff4742;
+  color: #fff;
+  box-shadow: 5px 5px 8px #000;
+  border-radius: 3px;
+  padding: 5px 6px;
+  cursor: pointer;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  max-width: 450px;
+}
+
+ul {
+  display: block;
+  margin-right: 10px;
+  padding: 5px;
+  list-style-type: none;
+  word-wrap: break-word;
+  background-color: #fff;
+  box-shadow: 5px 5px 8px;
+  border-radius: 3px;
+  max-width: 450px;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.container {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#dice-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#dice-container button {
+  background-color: #ff4742;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+#dice-container h3,
+#message-container h3 {
+  padding-top: 20px;
+}
+
+#message-container {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+#message-container hr {
+  width: 250px;
+  border: 5px solid #ff4742;
+}

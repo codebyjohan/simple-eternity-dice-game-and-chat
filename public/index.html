@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple dice game with chat!</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 id="welcome-message"></h3>
+
+      <div id="user-container">
+        <form id="user-form">
+          <label>Enter your name:</label>
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Enter your name"
+            required
+          />
+          <button>Start!</button>
+        </form>
+      </div>
+
+      <div id="dice-container" class="hidden">
+        <p>Roll the dice on the button below.</p>
+        <button id="dice-button">Roll the dice!</button>
+        <h3>Result:</h3>
+        <ul id="dice-result"></ul>
+      </div>
+
+      <div id="message-container" class="hidden">
+        <hr />
+        <form id="message-form">
+          <h3>Chat with your opponents!</h3>
+          <textarea
+            id="message-input"
+            placeholder="Write a message"
+            required
+          ></textarea>
+          <button>Send your message!</button>
+        </form>
+        <h3>Chat messages</h3>
+        <ul id="text-messages"></ul>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
